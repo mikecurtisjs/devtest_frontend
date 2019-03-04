@@ -16,9 +16,10 @@ Brian Ellis - brian.ellis@bondexchange.com
 
 # Bonus Points
 1. Persisting the state of the app filter and complete/incomplete items in the client even on refresh
-2. Turning the UX pretty
-3. Making the UX responsive
-4. Usage of comments to code where it makes sense for readability
+2. The title is missing from the heading of each item. Create readable unique title for each heading based on how the data comes in. Does not need to be a propert value of the payload and but should have a recognizable to which object item is being referenced.
+3. Turning the UX pretty
+4. Making the UX responsive
+5. Usage of comments to code where it makes sense for readability
 
 ## Example presentation
 ![alt text](https://raw.githubusercontent.com/brianlellis/bx-fe-test/master/example.gif "Example")
