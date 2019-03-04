@@ -1,3 +1,6 @@
+# Who to contact for issues
+Brian Ellis - brian.ellis@bondexchange.com
+
 # Front-End Candidate Test
 
 ## What the finished product should be:
