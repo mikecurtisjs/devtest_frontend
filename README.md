@@ -15,6 +15,67 @@ __https://jsonplaceholder.typicode.com/todos__
 # JS Pattern and Libraries Accepted
 __May use jQuery but no other framework library__
 
+The pattern of JS used is not entirely restricted in formation of the object class but it should conform to a recognized structural pattern. Recognized structural pattern examples may be seen below but are not limited to the 3 examples only:
+
+### Patter One
+```javascript
+var myClass = {
+	appData:{},
+	init: function() {
+
+	},
+	functionOne: function(){
+
+	},
+	functionTwo: function(){
+
+	}
+}
+```
+
+### Pattern Two
+```javascript
+var myClass = {
+	var myClass, _self;
+	jQuery(document).ready(function(){
+  myClass = (function ($) {
+    _self = this;
+
+    return {
+      init: () => {
+        // my code
+      },
+			functionOne: () => {
+
+			}
+    };
+  })(jQuery);
+  myClass.init();
+});
+}
+```
+
+### Pattern Three
+```javascript
+var mySingletonObject = (function () {
+  var _self; // Setting up a shared private var
+  return {
+    init: function () {
+      _self = this; // Assigning the value to the shared private var
+      // Call my next method
+      _self.test();
+    },
+    test: function () {
+      console.log("I'm getting good at this!");
+      _self.test2();
+    },
+    test2: function () {
+      console.log("and _self if still working!!!");
+    }
+  }
+})();
+```
+
 ## The structural pattern
 
 
