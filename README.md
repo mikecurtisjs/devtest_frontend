@@ -26,34 +26,34 @@ The pattern of JS used is not entirely restricted in formation of the object cla
 ### Pattern One
 ```javascript
 var myClass = {
-	appData:{},
-	init: function() {
-
-	},
-	functionOne: function(){
-
-	},
-	functionTwo: function(){
-
-	}
+  appData:{},
+  init: function() {
+    // my code
+  },
+  functionOne: function(){
+    // my code
+  },
+  functionTwo: function(){
+    // my code
+  }
 }
 ```
 
 ### Pattern Two
 ```javascript
 var myClass = {
-	var myClass, _self;
-	jQuery(document).ready(function(){
-  myClass = (function ($) {
-    _self = this;
+   var myClass, _self;
+   jQuery(document).ready(function(){
+     myClass = (function ($) {
+       _self = this;
 
-    return {
-			init: () => {
-			  // my code
-			},
-			functionOne: () => {
-
-			}
+      return {
+        init: () => {
+          // my code
+        },
+        functionOne: () => {
+      	  // my code
+        }
     };
   })(jQuery);
   myClass.init();
