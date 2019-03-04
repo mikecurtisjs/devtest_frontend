@@ -7,10 +7,15 @@
 4. Page should allow incomplete/complete to be clicked and changed
 5. The UX colors and style don not need to match exactly except for: 4 column rows and usage of top filter bar
 
+## What we're looking for in git
+1. Proper branching - for the project namespace comes off master as `candidate/{name}`
+2. Proper commits in the system where applicable. One commit and push is way too few commits.
+
 # Bonus Points
 1. Persisting the state of the app filter and complete/incomplete items in the client even on refresh
 2. Turning the UX pretty
 3. Making the UX responsive
+4. Usage of comments to code where it makes sense for readability
 
 ## Example presentation
 ![alt text](https://raw.githubusercontent.com/brianlellis/bx-fe-test/master/example.gif "Example")
