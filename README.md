@@ -42,9 +42,9 @@ var myClass = {
     _self = this;
 
     return {
-      init: () => {
-        // my code
-      },
+			init: () => {
+			  // my code
+			},
 			functionOne: () => {
 
 			}
@@ -72,6 +72,7 @@ var mySingletonObject = (function () {
     test2: function () {
       console.log("and _self if still working!!!");
     }
+
   }
 })();
 ```
