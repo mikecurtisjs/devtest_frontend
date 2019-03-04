@@ -5,6 +5,12 @@
 2. Dev needs to build out the page from the data
 3. Page should allow the data to be filtered by number correctly
 4. Page should allow incomplete/complete to be clicked and changed
+5. The UX colors and style don not need to match exactly except for: 4 column rows and usage of top filter bar
+
+# Bonus Points
+1. Persisting the state of the app filter and complete/incomplete items in the client even on refresh
+2. Turning the UX pretty
+3. Making the UX responsive
 
 ## Example presentation
 ![alt text](https://raw.githubusercontent.com/brianlellis/bx-fe-test/master/example.gif "Example")
@@ -17,7 +23,7 @@ __May use jQuery but no other framework library__
 
 The pattern of JS used is not entirely restricted in formation of the object class but it should conform to a recognized structural pattern. Recognized structural pattern examples may be seen below but are not limited to the 3 examples only:
 
-### Patter One
+### Pattern One
 ```javascript
 var myClass = {
 	appData:{},
@@ -76,9 +82,6 @@ var mySingletonObject = (function () {
   }
 })();
 ```
-
-## The structural pattern
-
 
 # Getting Started With Repo
 
