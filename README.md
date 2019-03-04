@@ -1,6 +1,24 @@
+# Front-End Candidate Test
+
+## What the finished product should be:
+1. Developer needs to retrieve the data from an API
+2. Dev needs to build out the page from the data
+3. Page should allow the data to be filtered by number correctly
+4. Page should allow incomplete/complete to be clicked and changed
+
+## Example presentation
 ![alt text](https://raw.githubusercontent.com/brianlellis/bx-fe-test/master/example.gif "Example")
 
-## Getting Started
+# API URL
+__https://jsonplaceholder.typicode.com/todos__
+
+# JS Pattern and Libraries Accepted
+__May use jQuery but no other framework library__
+
+## The structural pattern
+
+
+# Getting Started With Repo
 
 ### Dependencies
 
