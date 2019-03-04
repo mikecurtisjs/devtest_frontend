@@ -8,7 +8,7 @@ Brian Ellis - brian.ellis@bondexchange.com
 2. Dev needs to build out the page from the data
 3. Page should allow the data to be filtered by number correctly
 4. Page should allow incomplete/complete to be clicked and changed
-5. The UX colors and style don not need to match exactly except for: 4 column rows and usage of top filter bar
+5. The UX colors and style do not need to match exactly except for: 4 column rows and usage of top filter bar
 
 ## What we're looking for in git
 1. Proper branching - for the project namespace comes off master as `candidate/{name}`
@@ -90,6 +90,9 @@ var mySingletonObject = (function () {
   }
 })();
 ```
+
+# CSS Libraries Accepted
+Other than prefixing libraries to conform to browser compatibility in the system no other libraries can be used. This includes any form of skeleton, boostrap, foundation, etc.
 
 # Getting Started With Repo
 
