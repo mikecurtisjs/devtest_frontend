@@ -76,23 +76,21 @@ function run() {
 
 ### Pattern Three (JSON Form Singleton)
 ```javascript
-// With jQuery param pass inclusion
-var mySingletonObject = (($)=> {
-  return {
-    init: ()=> {
-      _self = this; // Assigning the value to the shared private var
-      // Call my next method
-      _self.test();
-    },
-    test: ()=> {
-      console.log("I'm getting good at this!");
-      _self.test2();
-    },
-    test2: ()=> {
-      console.log("and _self if still working!!!");
-    }
+// with jQuery param pass inclusion
+let _self;
+const mySingletonObject = {
+  init: ()=> {
+    _self = this;
+    _self.test();
+  },
+  test: ()=> {
+    console.log("I'm getting good at this!");
+    _self.test2();
+  },
+  test2: ()=> {
+    console.log("and _self if still working!!!");
   }
-})(jQuery);
+};
 ```
 
 # CSS Libraries Accepted
