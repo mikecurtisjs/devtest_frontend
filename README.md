@@ -74,11 +74,12 @@ function run() {
 }
 ```
 
-### Pattern Three (JSON Form Singleton)
+### Pattern Three (JSON Form Class)
 ```javascript
 // with jQuery param pass inclusion
 let _self;
-const mySingletonObject = {
+const myClass = {
+  appData: {},
   init: ()=> {
     _self = this;
     _self.test();
@@ -91,6 +92,7 @@ const mySingletonObject = {
     console.log("and _self if still working!!!");
   }
 };
+myClass.init();
 ```
 
 # CSS Libraries Accepted
