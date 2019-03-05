@@ -76,7 +76,7 @@ function run() {
 
 ### Pattern Three (JSON Form Singleton)
 ```javascript
-//With Jquery param pass inclusion
+// With jQuery param pass inclusion
 var mySingletonObject = (($)=> {
   return {
     init: ()=> {
