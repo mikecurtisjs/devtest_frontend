@@ -95,7 +95,7 @@ myClass.init();
 ```
 
 # CSS Libraries Accepted
-Other than prefixing libraries to conform to browser compatibility in the system no other libraries can be used. This includes any form of skeleton, boostrap, foundation, etc.
+Other than prefixing libraries to conform to browser compatibility in the system no other libraries can be used. This includes any form of skeleton, bootstrap, foundation, etc.
 
 # Getting Started With Repo
 
