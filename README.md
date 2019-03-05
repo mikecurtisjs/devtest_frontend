@@ -76,7 +76,6 @@ function run() {
 
 ### Pattern Three (JSON Form Class)
 ```javascript
-// with jQuery param pass inclusion
 let _self;
 const myClass = {
   appData: {},
