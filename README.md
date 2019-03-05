@@ -32,64 +32,67 @@ __May use jQuery but no other framework library__
 
 The pattern of JS used is not entirely restricted in formation of the object class but it should conform to a recognized structural pattern. Recognized structural pattern examples may be seen below but are not limited to the 3 examples only:
 
-### Pattern One
+### Pattern One (ES6 Frozen Object)
 ```javascript
-var myClass = {
-  appData:{},
-  init: function() {
-    // my code
-  },
-  functionOne: function(){
-    // my code
-  },
-  functionTwo: function(){
-    // my code
-  }
+const _data = [];
+
+const UserStore = {
+  add: item => _data.push(item),
+  get: id => _data.find(d => d.id === id)
 }
+
+Object.freeze(UserStore);
+export default UserStore;
 ```
 
-### Pattern Two
+### Pattern Two (Singleton)
 ```javascript
-var myClass = {
-   var myClass, _self;
-   jQuery(document).ready(function(){
-     myClass = (function ($) {
-       _self = this;
-
-      return {
-        init: () => {
-          // my code
-        },
-        functionOne: () => {
-      	  // my code
+var Singleton = (function () {
+    var instance;
+ 
+    function createInstance() {
+        var object = new Object("I am the instance");
+        return object;
+    }
+ 
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
         }
     };
-  })(jQuery);
-  myClass.init();
-});
+})();
+ 
+function run() {
+ 
+    var instance1 = Singleton.getInstance();
+    var instance2 = Singleton.getInstance();
+ 
+    alert("Same instance? " + (instance1 === instance2));  
 }
 ```
 
-### Pattern Three
+### Pattern Three (JSON Form Singleton)
 ```javascript
-var mySingletonObject = (function () {
-  var _self; // Setting up a shared private var
+//With Jquery param pass inclusion
+var mySingletonObject = (($)=> {
   return {
-    init: function () {
+    init: ()=> {
       _self = this; // Assigning the value to the shared private var
       // Call my next method
       _self.test();
     },
-    test: function () {
+    test: ()=> {
       console.log("I'm getting good at this!");
       _self.test2();
     },
-    test2: function () {
+    test2: ()=> {
       console.log("and _self if still working!!!");
     }
-
   }
-})();
+})(jQuery);
 ```
 
 # CSS Libraries Accepted
