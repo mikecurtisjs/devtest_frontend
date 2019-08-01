@@ -5,6 +5,7 @@ Brian Ellis - brian.ellis@bondexchange.com
 
 ## Environmental Notes
 1. This system is meant to work with node 10.x. Higher versions have had complications in installing the package
+2. SSH Key cloning may have an issue with pushing a branch from past experiences. Cloning via HTTPS seems to have no issue and may be a result of the key permissions in relation to Github's ssh system.
 
 ## What the finished product should be:
 1. Developer needs to retrieve the data from an API
