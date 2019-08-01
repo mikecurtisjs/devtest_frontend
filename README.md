@@ -3,6 +3,9 @@ Brian Ellis - brian.ellis@bondexchange.com
 
 # Front-End Candidate Test
 
+## Environmental Notes
+1. This system is meant to work with node 10.x. Higher versions have had complications in installing the package
+
 ## What the finished product should be:
 1. Developer needs to retrieve the data from an API
 2. Dev needs to build out the page from the data
