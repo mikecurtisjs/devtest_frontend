@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Copy Me</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<h1>Copy Me</h1>
+  <head>
+    <title>Jet Insurance Testing</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Hanlde Errors -->
+      <div class="error__message"></div>
 
-	<p>Anything you put in the <code>copy</code> directory gets copied as-is into the <code>dist</code> directory.</p>
+      <!-- Filter List -->
+      <div class="filter__container">
+        <h1>Filter By User</h1>
+        <ul class="filter"></ul>
+      </div>
 
-	<p><button id="click-me">Click Me</button></p>
-
-	<!-- Scripts -->
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
-	<script src="js/main.polyfills.js"></script>
-</body>
+      <!-- Task Cards -->
+      <div class="card__container"></div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/display.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.polyfills.js"></script>
+  </body>
 </html>

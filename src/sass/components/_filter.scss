@@ -1,0 +1,42 @@
+.filter__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  & h1 {
+    font-size: 2.6rem;
+    font-weight: 300;
+  }
+}
+
+.filter {
+  display: flex;
+  list-style: none;
+  margin-left: 2rem;
+  font-size: 2rem;
+  overflow: auto;
+  padding: 1rem 0;
+
+  @media only screen and (max-width: 900px) {
+    max-width: 90%;
+  }
+  & li {
+    background-color: $color-primary-dark;
+    margin-left: 1rem;
+    padding: 0.8rem 1.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  & li.active {
+    background-color: darken($color-primary-dark, 9);
+  }
+
+  & li:hover {
+    background-color: darken($color-primary-dark, 5);
+  }
+}

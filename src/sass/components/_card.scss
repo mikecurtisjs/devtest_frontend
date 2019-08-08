@@ -1,0 +1,72 @@
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: $color-background-light;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 15;
+
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33rem;
+  min-height: 30rem;
+  margin: 1rem auto;
+
+  // Card Head
+  &__head {
+    background-color: $color-primary-dark;
+    text-align: center;
+    color: $color-white;
+    padding: 1rem 0;
+
+    & h1 {
+      font-size: 2.2rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+    & h2 {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+
+  // Card Body
+  &__body {
+    p {
+      margin-left: 2rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  // Card Input Compete / Incomplete
+  &__input {
+    & button {
+      width: 100%;
+      padding: 1rem 0;
+      border: none;
+      color: $color-white;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    & .bg-green {
+      background-color: rgb(0, 102, 0);
+    }
+    & .bg-green:hover {
+      background-color: rgb(1, 31, 1);
+    }
+    & .bg-red {
+      background-color: rgb(136, 0, 0);
+    }
+    & .bg-red:hover {
+      background-color: rgb(95, 4, 4);
+    }
+  }
+}

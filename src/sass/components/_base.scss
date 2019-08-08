@@ -1,17 +1,24 @@
-/**
- * @section Base Styles
- */
-
-body {
-	font-size: 125%;
-	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+// HTML Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-input,
-textarea,
-select,
-button {
-	font: inherit;
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-background;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: $color-white;
 }
