@@ -27,7 +27,7 @@ const displayData = obj => {
   });
 };
 
-// Show Availble Filters Based On User ID
+// Show Available Filters Based On User ID
 const displayFilter = arr => {
   if (!arr.length) return;
   const new_arr = [...new Set(arr)];
@@ -38,7 +38,7 @@ const displayFilter = arr => {
   displayError();
 };
 
-// Show Error
+// Show Errors
 const displayError = error => {
   const errorMessage = document.querySelector(".error__message");
 

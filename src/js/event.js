@@ -1,5 +1,5 @@
 // Click Event for Task Complete
-// This function changes the value on fetched Obect and re-renders the display
+// This function changes the value on the fetched Object and re-renders the display
 const complete = id => {
   const ids = data.map(json => json.id);
   const task = data[ids.indexOf(id)];
@@ -14,7 +14,7 @@ const filter = e => {
   // Reset Filter data
   filteredData = [];
 
-  // Is filter Active? then turn off else turn on
+  // Is filter Active? than turn off else turn on
   e.classList.value !== "active"
     ? (e.classList = "active")
     : (e.classList = "");
